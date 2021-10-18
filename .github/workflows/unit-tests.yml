@@ -37,7 +37,5 @@ jobs:
       run: |
         python -m unittest
     - name: Test value of strings on minimum()
-      if: *args != int, float
-        minimum(*args) == nan
       run: |
-        python -m unittest
+        unittest tests/test_functionality.py
