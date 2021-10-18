@@ -38,4 +38,3 @@ def minimum(*args):
 
     return the_min
 
-    return the_min
