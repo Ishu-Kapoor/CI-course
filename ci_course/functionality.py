@@ -4,12 +4,10 @@ import numbers
 def greet(name=""):
     """
     A function that takes a name and returns a greeting.
-
     Parameters
     ----------
     name : str, optional
         The name to greet (default is "")
-
     Returns
     -------
     str
@@ -21,12 +19,10 @@ def greet(name=""):
 def minimum(*args):
     """
     A function taking some arguments and returning the minimum number among the arguments.
-
     Parameters
     ----------
     args : int, float
         The numbers from which to return the minimum
-
     Returns
     -------
     int, float
@@ -39,5 +35,7 @@ def minimum(*args):
     for arg in args:
         if isinstance(arg, numbers.Real):
             the_min = min(the_min, arg)
+
+    return the_min
 
     return the_min
